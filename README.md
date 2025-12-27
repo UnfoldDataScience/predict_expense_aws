@@ -113,5 +113,5 @@ Replace `<EC2-PUBLIC-IP>` with your EC2 instance's public IP address.
 
 ## Step 9: Stop the Instance to save extra bill
 
-Once you are done you MUST STOP INSTANCE otherwise you will get billed
+Once you are done you MUST STOP INSTANCE otherwise you will get billed,
 go to Instance list from "instances" -> Check your instance -> From "instance state" dropdown above STOP AND TERMINATE your instance
