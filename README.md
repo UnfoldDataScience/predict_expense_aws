@@ -21,7 +21,7 @@ This guide provides step-by-step instructions to deploy the Expense Prediction F
    - AMI: Ubuntu Server 22.04 LTS or Amazon Linux 2023
    - Instance type: t2.micro (free tier) or t2.small
    - Key pair: Create new or select existing (download .pem file)
-   - Network settings: Allow SSH (port 22) and HTTP (port 5000) traffic
+   - Network settings: Allow SSH and HTTP traffic
 5. Launch instance and note the Public IP address
 
 ## Step 2: Configure Security Group
@@ -29,8 +29,8 @@ This guide provides step-by-step instructions to deploy the Expense Prediction F
 1. Go to EC2 Dashboard → Security Groups
 2. Select your instance's security group
 3. Edit Inbound Rules:
-   - Type: SSH, Port: 22, Source: Your IP
-   - Type: Custom TCP, Port: 5000, Source: 0.0.0.0/0 (or your IP for testing)
+   - Ensure: SSH, Port: 22, Source: 0.0.0.0/0 (or your IP for testing)
+   - Ensure: Custom TCP, Port: 5000, Source: 0.0.0.0/0 (or your IP for testing)
 4. Save rules
 
 ## Step 3: Connect to EC2 Instance
