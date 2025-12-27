@@ -9,7 +9,7 @@ This guide provides step-by-step instructions to deploy the Expense Prediction F
 - AWS Account
 - EC2 instance running (Ubuntu/Amazon Linux recommended)
 - SSH access to your EC2 instance
-- Local machine with SCP installed (Windows: use WinSCP or PowerShell, Linux/Mac: built-in)
+- Windows: use WinSCP or PowerShell, Linux/Mac: built-in
 
 ## Step 1: Launch EC2 Instance
 
