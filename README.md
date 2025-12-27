@@ -55,6 +55,7 @@ Once connected to EC2, run:
 ```bash
 sudo apt-get update
 sudo apt-get install -y python3 python3-pip python3-venv
+sudo apt install python3.12-venv
 ```
 
 ## Step 5: Transfer Files to EC2 Using Deployment Script
@@ -63,7 +64,7 @@ The deployment scripts automatically exclude `venv`, `__pycache__`, and other un
 
 **On Windows (PowerShell):**
 ```powershell
-.\deploy.ps1 -KeyFile "path\to\your-key.pem" -Ec2Connection ubuntu@<EC2-PUBLIC-IP>
+.\deploy.ps1 -KeyFile "path\to\your-key.pem" ubuntu@<EC2-PUBLIC-IP>
 ```
 
 **On Linux/Mac:**
@@ -79,14 +80,13 @@ chmod +x deploy.sh
 SSH back into your EC2 instance and run:
 
 ```bash
-mkdir -p ~/expense-prediction
-cd ~/expense-prediction
 
 python3 -m venv venv
 source venv/bin/activate
 
 pip install --upgrade pip
 pip install -r requirements.txt
+
 ```
 
 ## Step 7: Run the Application
